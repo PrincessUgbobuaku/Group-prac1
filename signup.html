@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+            <link rel="stylesheet" href="login.css"/>
+            <script src="login.js"></script>
+        </head>
+        <body>
+            <header>
+                <div class = "maintenance">
+                    <p>Website on maintenance from 23 November 2024 - 25 November 2024</p>
+                </div>
+                <nav>
+                    <a href="index_page.html"><img src="images/high_school_logo.png" class="logo-image"></a>
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="index_page.html" class="nav-anchor">Home</a></li>
+                        <li class="nav-list-item"><a href="main_page.html" class="nav-anchor">Test Scores</a></li>
+                        <li class="nav-list-item"><a href="about_us.html" class="nav-anchor">About Us</a></li>				
+                    </ul>
+                </nav>
+            </header>
+            <div class="wrapper">
+                <div class="container">
+                    <form class="form-box" onsubmit = login()>
+                        <h1>Hi there!</h1>
+                        <h3>Please fill in the fields below to sign up</h3>
+                        <div class="btn_box">
+                            <button type="button" class="toggle-btn-2" onclick="location.href='login_page.html'">Be better with Wellness Wave</button>
+                        </div>
+                        <div class="flex-inputs">
+                            <input required type="text" class="flex-input" id="name" name="name" placeholder="Name">
+
+                            <input required type="text" class="flex-input" id="surname" name="surname" placeholder="Surname">
+
+                            <input required type="text" class="flex-input" id="password" name="password" placeholder="Password">
+							
+							<input required type="text" class="flex-input" id="password" name="password" placeholder="Comfirm Password">
+
+                        </div>
+                        <button class="btn-lg btn-success" formaction="main_page.html" onclick=login() id="redirect">Sign me up</button>  
+                    </form>  
+                </div>
+            </div>
+    
+            <footer>
+                <div class="footer-container">
+                    <ul>
+                        <li><a href="#">More from CPUS</a></li>
+                        <li><a href="about_us.html">About us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Volunteer Work</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">School Events</a></li>
+                    </ul>
+    
+                    <div class="footer-sm-images">
+                        <p>Connect with us</p>
+                        <a href="#">
+                            <img class="social-media-image" src="./images/instagram-logo.webp" alt="Instagram logo">
+                        </a>
+                        <a href="#">
+                          <img class="social-media-image" src="./images/facebook-logo.webp" alt="Facebook logo">
+                        </a>
+                        <a href="#">
+                          <img class="social-media-image" src="./images/tiktok-logo.jpg" alt="TikTok logo">
+                        </a>
+                    </div>
+                </div>
+            </footer> 
+        </body>
+    </html>
